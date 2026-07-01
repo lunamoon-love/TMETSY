@@ -1,6 +1,6 @@
 
 let DATA=[];
-fetch('data.json').then(r=>r.json()).then(d=>{DATA=d;draw(d);});
+fetch('./data.json').then(r=>r.json()).then(d=>{DATA=d;draw(d);});
 function draw(arr){
 const g=document.getElementById('gallery');
 g.innerHTML='';
